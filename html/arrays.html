@@ -5,7 +5,7 @@
     <title>Usando Arrays</title>
     <link rel="stylesheet" href="../css/micss.css">
     <script>
-        var _articulos = new Array("Zapatilla","Camiseta","Pantalon","Calcetines");
+        var _articulos = new Array("Zapatilla", "Camiseta", "Pantalon", "Calcetines");
     </script>
 </head>
 
@@ -23,7 +23,7 @@
                 document.write("<p>El primer articulo es <strong>");
                 document.write(_articulos[0] + "</strong></p>");
                 document.write("<p>El ultimo articulo es <strong>");
-                document.write(_articulos[_articulos.length-1] + "</strong></p>");
+                document.write(_articulos[_articulos.length - 1] + "</strong></p>");
 
                 _articulos.unshift("Balon");                                        // Agrega al principio del array
                 document.write("<p>Agregamos este elemento: <strong>");
@@ -31,7 +31,7 @@
                 document.write("<p>Agregamos un elemento más al final: <strong>");
 
                 _articulos.push(prompt("Introduce el articulo"))                    // Agrega al final del array
-                document.write(_articulos[_articulos.length-1] + "</strong></p>");
+                document.write(_articulos[_articulos.length - 1] + "</strong></p>");
                 document.write("<p>" + _articulos[0] + "<br/>");
                 document.write(_articulos[1] + "<br/>");
                 document.write(_articulos[2] + "<br/>");
