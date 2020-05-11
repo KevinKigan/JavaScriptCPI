@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>remover y reemplazar</title>
+    <link href="../css/removerYReemplazar.css" rel="stylesheet">
+    <script src="../Jquery/jquery-1.6.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            document.getElementById("cerrar").addEventListener("click", cerrarBanner, false);
+            var imagenes = document.querySelectorAll("#carrete img");
+            for (var i = 0; i < imagenes.length; i++){
+                imagenes[i].addEventListener("click", carrito, false)
+            }
+        });
+
+        function cerrarBanner() {
+            $("#banner").remove();
+        }
+        
+        function carrito(num) {
+            switch (num.target) {
+                case img1:
+                    $("#img1").replaceWith("<div id = 'img1'>Agregado al carrito</div>");
+                    break;
+                case img2:
+                    $("#img2").replaceWith("<div id = 'img2'>Agregado al carrito</div>");
+                    break;
+                case img3:
+                    $("#img3").replaceWith("<div id = 'img3'>Agregado al carrito</div>");
+                    break;
+                case img4:
+                    $("#img4").replaceWith("<div id = 'img4'>Agregado al carrito</div>");
+                    break;
+
+            }
+
+        }
+
+
+    </script>
+</head>
+<body>
+
+    <div id = "banner">
+        Banner de prueba
+        <p id = "cerrar">
+            Cerrar
+        </p>
+    </div>
+    <div id = "carrete">
+        <img src="../imgs/arbol.jpg"width="250" height="175" id = "img1">
+        &nbsp
+        <img src="../imgs/car1.jpg" width="250" height="175" id = "img2">
+        &nbsp
+        <img src="../imgs/car2.jpg" width="250" height="175" id = "img3">
+        &nbsp
+        <img src="../imgs/car3.jpg" width="250" height="175" id = "img4">
+    </div>
+</body>
+</html>
