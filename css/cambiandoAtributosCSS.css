@@ -1,0 +1,24 @@
+#linkDestacaRedesSociales{
+    background-color: #990000;
+}
+
+a{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+table{
+    text-align: center;
+    border: #990000;
+}
+
+#contieneEnlaces{
+    position: absolute;
+    left: 31px;
+    top: 65px;
+    width: 400px;
+    height: 650px;
+    z-index: 1;
+    padding-top: 100px;
+}

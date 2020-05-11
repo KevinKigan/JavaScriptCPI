@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../css/removerYReemplazar.css" rel="stylesheet">
+    <script src="../Jquery/jquery-1.6.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+                //$("a [href^='https://']").addClass("linkDestacaRedesSociales");
+            document.getElementById("cursos").addEventListener("click", resaltarRRSS, false);
+        });
+
+        function resaltarRRSS() {
+            $("#cursos").addClass("linkDestacaRedesSociales");
+        }
+    </script>
+</head>
+<body>
+
+<div id = contieneEnlaces>
+    <a href="https://www.youtube.com" target="_blank" class="banner">
+        Youtube
+    </a></br>
+    <a href="https://www.google.com" target="_blank" class="rrss">
+        Google
+    </a></br>
+    <a href="https://twitter.com/" target="_blank" class="rrss">
+        Twitter
+    </a></br>
+    <a href="removerYReemplazar.html" target="_blank" class="cursos">
+        Remover y Reemplazar
+    </a></br>
+    <a href="calculadora_eventos.html" target="_blank" class="cursos">
+        Calculadora
+    </a></br>
+
+</div>
+<table width="100%" border="1">
+    <tr>
+        <td>Redes Sociales&nbsp;&nbsp;<input type="button" value="Redes Sociales" id="cursos"></td>
+        <td>Paginas hechas por Kevin&nbsp;&nbsp;<input type="button" value="Paginas Kevin" id="pagkev"></td>
+    </tr>
+</table>
+
+</body>
+</html>
